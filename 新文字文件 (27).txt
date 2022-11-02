@@ -1,3 +1,30 @@
 
 https://stackblitz.com/edit/angular-simple-http-get-ppdpsl?file=src%2Fapp%2Fapp.component.ts
 
+
+如何使用Javascript物件key對陣列array進行group分群組
+
+
+https://ucamc.com/articles/352-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8javascript%E7%89%A9%E4%BB%B6key%E5%B0%8D%E9%99%A3%E5%88%97array%E9%80%B2%E8%A1%8Cgroup%E5%88%86%E7%BE%A4%E7%B5%84
+
+https://ucamc.com/articles/352-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8javascript%E7%89%A9%E4%BB%B6key%E5%B0%8D%E9%99%A3%E5%88%97array%E9%80%B2%E8%A1%8Cgroup%E5%88%86%E7%BE%A4%E7%B5%84
+
+a.flatMap
+
+https://stackoverflow.com/questions/64083417/javascript-ungroup-data-in-object
+
+
+
+https://funday.asia/?MZlink=&ad_id=1932&utm_source=google&utm_medium=cpc&utm_campaign=20220906_Video1932&gclid=Cj0KCQjwqoibBhDUARIsAH2OpWiPNHLzeRpkmLf2zTymHU7KUVQ6coSW6XTMFbZ9v0oCwGQntwV__ZAaAq9jEALw_wcB
+
+
+const arr = [{"group":"abc","data":[{"name":"John","age":10},{"name":"Alice","age":15}]},{"group":"def","data":[{"name":"Scott","age":20},{"name":"Tamar","age":25}]}]
+
+const result = arr.flatMap(({ group, data }) => data.map(o => ({ group, ...o })))
+
+console.log(result);
+
+    const result11 = this.arr.flatMap(({ group, data }) => data.map(o => ({ group, ...o })));
+    console.log("result11", this.arr);
+    console.log("result22", result11);
+    console.log("result44", this.arr.flatMap(({ group, data }) => data.map(o => ({ group, ...o }))));
